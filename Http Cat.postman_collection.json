@@ -1,0 +1,1188 @@
+{
+	"info": {
+		"_postman_id": "49463223-5585-4193-9131-5132511c8da5",
+		"name": "Http Cat",
+		"description": "*   Website: [https://http.cat](https://http.cat)\n*   GitHub: [https://github.com/httpcats/http.cat](https://github.com/httpcats/http.cat)\n    \n\nThis version does not need any server side code. The API behavior is provided by a Nginx server config. The interface is built with React and pre-rendered with react-snap.\n\n*   [List of Http status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20055454"
+	},
+	"item": [
+		{
+			"name": "1xx",
+			"item": [
+				{
+					"name": "100: Continue",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/100",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "101: Switching Protocols",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/101",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"101"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "### Informational response\nThe request was received, continuing process."
+		},
+		{
+			"name": "2xx",
+			"item": [
+				{
+					"name": "200: Ok",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/200",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"200"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "201: Created",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/201",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"201"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "202: Accepted",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/202",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"202"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "204: No content",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/204",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"204"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "206: Partial Content",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/206",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"206"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "207: Multi-Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/207",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"207"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "### Successful \nThe request was successfully received, understood, and accepted."
+		},
+		{
+			"name": "3xx",
+			"item": [
+				{
+					"name": "300: Multiple Choices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/300",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"300"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "301: Moved Permanently",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/301",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"301"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "302: Found",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/302",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"302"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "303: See other",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/303",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"303"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "304: Not Modified",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/304",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"304"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "305: Use Proxy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/305",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"305"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "307: Temporary Redirect",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/307",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"307"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "### Redirection\nFurther action needs to be taken in order to complete the request."
+		},
+		{
+			"name": "4xx",
+			"item": [
+				{
+					"name": "400: Bad Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/400",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"400"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "401: Unauthorized",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://http.cat/401",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"401"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "402: Payment Required",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/402",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"402"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "403: Forbidden",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/403",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"403"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "404: Not Found",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/404",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "405: Method Not allowed",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/405",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"405"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "406: Not acceptable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/406",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"406"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "408: Request Timeout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/408",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"408"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "409: Conflict",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/409",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"409"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "410: Gone",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/410",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"410"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "411: Length Required",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/411",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"411"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "412: Precondition Failed",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/412",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"412"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "413: Payload Too Large",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/413",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"413"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "414: Request URL Too Long",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/414",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"414"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "415: Unsupported Media Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/415",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"415"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "416: Request range not satisfiable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/416",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"416"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "417: Expectation Failed",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/417",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"417"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "418: I'm a TeaPot",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/418",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"418"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "420: Enhance your Calm",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/420",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"420"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "421: Misdirected Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/421",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"421"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "422: Unprocessable Entity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/422",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"422"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "423: Locked",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/423",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"423"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "424: Failed Dependency",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/424",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"424"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "425: Unordered collection",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/425",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"425"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "426: Upgrade Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/426",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"426"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "429: Too many requests",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/429",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"429"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "431: Request Header Fields Too large",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/431",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"431"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "444: No Response",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/444",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"444"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "450: Blocked by Windows Parental Control",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/450",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"450"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "451: Unavailable for Legal Reasons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/451",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"451"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "499: Client Closed Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/499",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"499"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "### Client error\nThe request contains bad syntax or cannot be fulfilled."
+		},
+		{
+			"name": "5xx",
+			"item": [
+				{
+					"name": "500: Internal Server Error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/500",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"500"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "501: Not Implemented",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/501",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"501"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "502: Bad Gateway",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/502",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"502"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "503: Service Unavailable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/503",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"503"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "504: Gateway Timeout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/504",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"504"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "506: Variant Also Negotiates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/506",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"506"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "507: Insufficient Storage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/507",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"507"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "508: Loop Detected",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/508",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"508"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "509: Bandwidth Limit Exceeded",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/509",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"509"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "510: Not Extended",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/510",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"510"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "511: Network Authentication Required",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/511",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"511"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "599: Network Connect Timeout Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http.cat/599",
+							"protocol": "https",
+							"host": [
+								"http",
+								"cat"
+							],
+							"path": [
+								"599"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "### server error\nThe server failed to fulfill an apparently valid request."
+		}
+	]
+}
